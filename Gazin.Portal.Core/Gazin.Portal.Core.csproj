@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.5.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gazin.Portal.DataStorage\Gazin.Portal.DataStorage.csproj" />
+    <ProjectReference Include="..\Gazin.Portal.Data\Gazin.Portal.Data.csproj" />
+    <ProjectReference Include="..\Gazin.Portal.Integrations.Jira\Gazin.Portal.Integrations.Jira.csproj" />
+  </ItemGroup>
+
+</Project>
